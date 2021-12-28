@@ -1,6 +1,14 @@
 print('''hello world''')
 help(print)
-f = open('test.txt', 'w')
+f = open('test.txt', 'a')
 print('hello', 'how are you', sep='@', file=f)
 with open('file.txt', 'w') as f1:
     print('hello world', file=f1)
+print('continue', 'do well', sep='@', file=f)
+
+#test.txt
+hello@how are you
+hello@how are you
+continue@do well
+#test.txt
+hello world
